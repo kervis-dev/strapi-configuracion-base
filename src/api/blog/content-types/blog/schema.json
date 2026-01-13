@@ -54,12 +54,6 @@
         }
       }
     },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "blogs"
-    },
     "content": {
       "type": "richtext",
       "pluginOptions": {
@@ -71,16 +65,6 @@
     "rank": {
       "type": "integer",
       "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "repeteablesection": {
-      "type": "component",
-      "repeatable": true,
-      "component": "body.section-repeat",
       "pluginOptions": {
         "i18n": {
           "localized": true
