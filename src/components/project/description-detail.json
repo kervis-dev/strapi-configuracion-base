@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_project_description_details",
+  "info": {
+    "displayName": "descriptionDetail"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "resumen": {
+      "type": "richtext"
+    },
+    "imagen": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

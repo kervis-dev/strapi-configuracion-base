@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_repetible_tags_sections",
+  "info": {
+    "displayName": "tags section"
+  },
+  "options": {},
+  "attributes": {
+    "tecnologia": {
+      "type": "string"
+    }
+  }
+}

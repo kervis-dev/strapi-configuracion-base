@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descriptions": {
+      "type": "richtext"
+    },
+    "presentacion": {
+      "type": "text"
+    },
+    "enlaces": {
+      "displayName": "redes sociales",
+      "type": "component",
+      "repeatable": true,
+      "component": "redes.redes-sociales"
+    },
+    "tecnologia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "repetible.tags-section"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_experiencia_tegnologias",
+  "info": {
+    "displayName": "tegnologias"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "ano": {
+      "type": "string"
+    }
+  }
+}

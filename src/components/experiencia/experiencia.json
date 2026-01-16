@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_experiencia_experiencias",
+  "info": {
+    "displayName": "experiencia",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Puesto": {
+      "type": "string"
+    },
+    "empresa": {
+      "type": "string"
+    },
+    "explicacion": {
+      "displayName": "proyecto",
+      "type": "component",
+      "repeatable": true,
+      "component": "experiencia.proyecto"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "inicio": {
+      "type": "date"
+    },
+    "fin": {
+      "type": "date"
+    }
+  }
+}

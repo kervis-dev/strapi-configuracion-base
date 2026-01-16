@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certificaciones",
+  "info": {
+    "singularName": "certificacione",
+    "pluralName": "certificaciones",
+    "displayName": "certificacione",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "descriptions": {
+      "type": "text"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ano": {
+      "type": "string"
+    }
+  }
+}

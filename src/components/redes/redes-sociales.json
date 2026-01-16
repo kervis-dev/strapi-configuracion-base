@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_redes_redes_sociales",
+  "info": {
+    "displayName": "redes sociales",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
