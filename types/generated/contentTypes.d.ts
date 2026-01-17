@@ -1164,36 +1164,11 @@ export interface ApiSkillSkill extends Schema.CollectionType {
   options: {
     draftAndPublish: true;
   };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
   attributes: {
-    title: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    tecnologias: Attribute.Component<'experiencia.tegnologias', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    arena: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    rank: Attribute.Integer &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
+    title: Attribute.String;
+    tecnologias: Attribute.Component<'experiencia.tegnologias', true>;
+    arena: Attribute.String;
+    rank: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1209,12 +1184,6 @@ export interface ApiSkillSkill extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::skill.skill',
-      'oneToMany',
-      'api::skill.skill'
-    >;
-    locale: Attribute.String;
   };
 }
 
