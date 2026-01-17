@@ -1,5 +1,15 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface RepetibleTagsSection extends Schema.Component {
+  collectionName: 'components_repetible_tags_sections';
+  info: {
+    displayName: 'tags section';
+  };
+  attributes: {
+    tecnologia: Attribute.String;
+  };
+}
+
 export interface RedesRedesSociales extends Schema.Component {
   collectionName: 'components_redes_redes_sociales';
   info: {
@@ -74,26 +84,16 @@ export interface ExperienciaExperiencia extends Schema.Component {
   };
 }
 
-export interface RepetibleTagsSection extends Schema.Component {
-  collectionName: 'components_repetible_tags_sections';
-  info: {
-    displayName: 'tags section';
-  };
-  attributes: {
-    tecnologia: Attribute.String;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'repetible.tags-section': RepetibleTagsSection;
       'redes.redes-sociales': RedesRedesSociales;
       'project.especificacion': ProjectEspecificacion;
       'project.description-detail': ProjectDescriptionDetail;
       'experiencia.tegnologias': ExperienciaTegnologias;
       'experiencia.proyecto': ExperienciaProyecto;
       'experiencia.experiencia': ExperienciaExperiencia;
-      'repetible.tags-section': RepetibleTagsSection;
     }
   }
 }
