@@ -10,19 +10,6 @@ export interface RepetibleTagsSection extends Schema.Component {
   };
 }
 
-export interface RedesRedesSociales extends Schema.Component {
-  collectionName: 'components_redes_redes_sociales';
-  info: {
-    displayName: 'redes sociales';
-    icon: 'alien';
-    description: '';
-  };
-  attributes: {
-    title: Attribute.String;
-    url: Attribute.String;
-  };
-}
-
 export interface ProjectEspecificacion extends Schema.Component {
   collectionName: 'components_project_especificacions';
   info: {
@@ -40,6 +27,19 @@ export interface ProjectDescriptionDetail extends Schema.Component {
     titulo: Attribute.String;
     resumen: Attribute.RichText;
     imagen: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+  };
+}
+
+export interface RedesRedesSociales extends Schema.Component {
+  collectionName: 'components_redes_redes_sociales';
+  info: {
+    displayName: 'redes sociales';
+    icon: 'alien';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    url: Attribute.String;
   };
 }
 
@@ -88,9 +88,9 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'repetible.tags-section': RepetibleTagsSection;
-      'redes.redes-sociales': RedesRedesSociales;
       'project.especificacion': ProjectEspecificacion;
       'project.description-detail': ProjectDescriptionDetail;
+      'redes.redes-sociales': RedesRedesSociales;
       'experiencia.tegnologias': ExperienciaTegnologias;
       'experiencia.proyecto': ExperienciaProyecto;
       'experiencia.experiencia': ExperienciaExperiencia;
